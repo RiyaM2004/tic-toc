@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color:rgb(125, 28, 74) ;
+    color: white;
+    height: 60px;
+    border-radius: 35px;
+    font-size: 25px;
+    padding: 20px 0px 0px 20px;
+    align-items: center;
+    font-family: "Roboto", serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+body{
+    background-color: rgb(209, 125, 152);
+}
+.gameContainer{
+   
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 130px);
+    grid-template-columns: repeat(3, 130px);
+    position: relative;
+
+
+}
+.box{
+    border: 3px solid black;
+    font-size: 70px;
+    cursor: pointer;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(253, 183, 234);
+}
+.gameInfo{
+    padding: 0px 34px;
+    font-family: "Bubblegum Sans", serif;
+}
+.info{
+    font-size: 25px;
+}
+.imgBox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+   border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom:0;
+}
+#reset{
+    display: block;
+    margin: 20px 30px 20px 50px;
+    padding: 5px 10px 7px 10px ;
+    border-radius: 7px;
+    border: 3px solid rgb(170, 96, 200);
+    background-color: rgb(181, 168, 213);
+    cursor: pointer;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: rgb(0, 135, 158);
+    transition: width 1s ease-in-out;
+}
